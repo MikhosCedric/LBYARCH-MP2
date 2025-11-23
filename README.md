@@ -31,22 +31,20 @@ LBYARCH-MP2/
 
 ### Expected Results
 
-Based on SIMD optimization, we expect consistent 4-5x speedup:
-
 #### For n = 2^20 (1,048,576 elements)
-- **C Version Time:** ~15 ms
-- **Assembly Time:** ~3 ms
-- **Speedup:** ~5x
+- **C Version Time:** ~3.22 ms
+- **Assembly Time:** ~0.63 ms
+- **Speedup:** ~5.10x
 
 #### For n = 2^24 (16,777,216 elements)
-- **C Version Time:** ~250 ms
-- **Assembly Time:** ~50 ms
-- **Speedup:** ~5x
+- **C Version Time:** ~52 ms
+- **Assembly Time:** ~11 ms
+- **Speedup:** ~4.65x
 
 #### For n = 2^29 (536,870,912 elements)
-- **C Version Time:** ~4000 ms
-- **Assembly Time:** ~800 ms
-- **Speedup:** ~5x
+- **C Version Time:** ~1687 ms
+- **Assembly Time:** ~361 ms
+- **Speedup:** ~4.67x
 
 ### Correctness Verification
 
