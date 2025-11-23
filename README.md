@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # LBYARCH-MP2
 Main Repository for LBYARCH MP2
 =======
@@ -15,7 +14,7 @@ This project implements a dot product computation in two versions: a sequential 
 The dot product of two vectors A and B is defined as:
 
 ```
-sdot = ?(i=1 to n) a[i] × b[i] = a?b? + a?b? + ... + a?b?
+sdot = ?(i=1 to n) a[i] Ã— b[i] = a?b? + a?b? + ... + a?b?
 ```
 
 Both implementations compute this value with double-precision floating-point arithmetic.
@@ -270,7 +269,7 @@ Ensure sufficient available memory before running largest tests.
 
 - Execution time scales linearly with vector size
 - For 2^29, expect several seconds execution per iteration
-- 20 iterations × ~800ms = ~16 seconds per 2^29 test
+- 20 iterations Ã— ~800ms = ~16 seconds per 2^29 test
 
 ## Key Metrics
 
