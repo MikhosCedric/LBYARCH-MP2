@@ -7,6 +7,8 @@ Main Repository for LBYARCH MP2
 
 This project implements a dot product computation in two versions: a sequential C baseline and an optimized x86-64 assembly implementation using SIMD instructions. The objective is to compare correctness and performance between traditional sequential code and hand-optimized assembly.
 
+### Youtube Link: [Project Video Demo](INSERT LINK)
+
 ### Standard Test Sizes
 
 | Power | Size | Elements | Memory per Vector |
