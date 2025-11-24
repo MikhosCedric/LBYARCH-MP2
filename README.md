@@ -15,24 +15,23 @@ This project implements a dot product computation in two versions: a sequential 
 | 2^24 | 16,777,216 | ~17 million | ~128 MB |
 | 2^29 | 536,870,912 | ~537 million | ~4 GB |
 
-## Performance Analysis
+## Performance Analysis Tables
 
-### Expected Results
+### DEBUG Mode
 
-#### For n = 2^20 (1,048,576 elements)
-- **C Version Time:** ~3.22 ms
-- **Assembly Time:** ~0.63 ms
-- **Speedup:** ~5.10x
+| Array Size | Elements | C Version | Assembly | Speedup |
+|---|---|---|---|---|
+| 2^20 | 1,048,576 | ~3.22 ms | ~0.63 ms | 5.10x |
+| 2^24 | 16,777,216 | ~52 ms | ~11 ms | 4.65x |
+| 2^29 | 536,870,912 | ~1687 ms | ~361 ms | 4.67x |
 
-#### For n = 2^24 (16,777,216 elements)
-- **C Version Time:** ~52 ms
-- **Assembly Time:** ~11 ms
-- **Speedup:** ~4.65x
+### RELEASE Mode
 
-#### For n = 2^29 (536,870,912 elements)
-- **C Version Time:** ~1687 ms
-- **Assembly Time:** ~361 ms
-- **Speedup:** ~4.67x
+| Array Size | Elements | C Version | Assembly | Speedup |
+|---|---|---|---|---|
+| 2^20 | 1,048,576 | ~0.88 ms | ~0.52 ms | 1.67x |
+| 2^24 | 16,777,216 | ~14.23 ms | ~10.09 ms | 1.41x |
+| 2^29 | 536,870,912 | ~716.33 ms | ~343.99 ms | 2.08x |
 
 ### Correctness Verification
 
